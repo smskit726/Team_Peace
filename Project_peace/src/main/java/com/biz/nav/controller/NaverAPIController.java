@@ -24,7 +24,7 @@ public class NaverAPIController {
 	public NcRouter naverSearch(String sPos, String aPos) {
 		String queryURL = nService.queryURL(sPos, aPos);
 		
-		log.debug(sPos);
+//		log.debug(sPos);
 		NcRouter res = nService.getNaverPath(queryURL);
 		log.debug("res >>> " + res.toString());
 		
